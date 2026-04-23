@@ -10,6 +10,8 @@ function App() {
     <p>This is my app.</p>
     <Food />  
     <Card />
+    <Card />
+    <Card />
     <Button />
     <Footer />
           
