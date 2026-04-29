@@ -17,7 +17,7 @@ body {
 .card h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    
+
 }
 .card p {
     font-size: 1em;
@@ -36,3 +36,28 @@ img {
     border: none;
     cursor: pointer;
 } */
+/* .button:hover {
+    background-color: #0056b3;
+} */
+ .student {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    max-width: 300px;
+}
+.welcome-mess {
+    font-size: 1.2em;
+    color: #ece3e3;
+    background-color: rgb(28, 55, 38);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+.login-prompt {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
