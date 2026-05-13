@@ -5,12 +5,24 @@ import Card from "./card"
 import Button from "./button"
 import Student from "./student"
 import UserGreeting from "./userGreeting"
+import List from "./list"
 
 function App() {
+  const fruits = [{id: 1, name:'Apple', carlories: 95},
+            {id: 2, name:'Banana', carlories: 105},
+            {id: 3, name:'Cherry', carlories: 50},
+            {id: 4, name:'Date', carlories: 20},
+            {id: 5, name:'Elderberry', carlories: 70}]
+  const vegetable = [{id: 1, name:'Apple', carlories: 95},
+            {id: 2, name:'Banana', carlories: 105},
+            {id: 3, name:'Cherry', carlories: 50},
+            {id: 4, name:'Date', carlories: 20},
+            {id: 5, name:'Elderberry', carlories: 70}]
   return (<>
     <Header />
     <p>This is my app.</p>
     <UserGreeting isLogged={true} userName="Gozie" />
+    <UserGreeting />
     <Food />  
     <Card />
     <Card />
@@ -20,6 +32,8 @@ function App() {
     <Student name="Patrick" age={28} isStudent={false} />
     <Student name="Squidward" age={30} isStudent={false} />
     <Student name="Sandy" age={29} isStudent={true} />
+    {fruits.length > 0 && <List items={fruits} catergory="Fruits" />}
+    {vegetable.length > 0 && <List items={vegetable} catergory="Vegetables" />}
     <Student />
     <Footer />
           
