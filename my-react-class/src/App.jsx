@@ -6,6 +6,9 @@ import Button from "./button"
 import Student from "./student"
 import UserGreeting from "./userGreeting"
 import List from "./list"
+import ProfilePicture from "./profilepic"
+import MyComponents from "./myComponents"
+import Counter from "./counter"
 
 function App() {
   const fruits = [{id: 1, name:'Apple', carlories: 95},
@@ -22,12 +25,15 @@ function App() {
     <Header />
     <p>This is my app.</p>
     <UserGreeting isLogged={true} userName="Gozie" />
+    <Counter/>
     <UserGreeting />
+    <ProfilePicture />
     <Food />  
     <Card />
     <Card />
     <Card />
     <Button />
+    <MyComponents />
     <Student name="SpongeBob" age={27} isStudent={true} />
     <Student name="Patrick" age={28} isStudent={false} />
     <Student name="Squidward" age={30} isStudent={false} />
