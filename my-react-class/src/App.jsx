@@ -10,6 +10,9 @@ import ProfilePicture from "./profilepic"
 import MyComponents from "./myComponents"
 import Counter from "./counter"
 import OnChange from "./onChange"
+import ColorPicker from "./colorPicker"
+import "./App.css"
+import MyCar from "./cars"
 
 function App() {
   const fruits = [{id: 1, name:'Apple', carlories: 95},
@@ -27,9 +30,11 @@ function App() {
     <p>This is my app.</p>
     <UserGreeting isLogged={true} userName="Gozie" />
     <Counter />
+    <ColorPicker />
     <UserGreeting />
     <ProfilePicture />
     <OnChange />
+    <MyCar />
     <Food />  
     <Card />
     <Card />
