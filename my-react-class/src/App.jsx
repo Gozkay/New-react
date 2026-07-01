@@ -14,6 +14,11 @@ import ColorPicker from "./colorPicker"
 import "./App.css"
 import MyCar from "./cars"
 import ToDo from "./toDo"
+import UseEffect from "./useEffect"
+import SetWidth from "./setWidth"
+import DigitalClock from "./digitalClock"
+import UseContextA from "./useContextA"
+import Api from "./api's"
 
 function App() {
   const fruits = [{id: 1, name:'Apple', carlories: 95},
@@ -29,6 +34,11 @@ function App() {
   return (<>
     <Header />
     <p>This is my app.</p>
+    <UseEffect />
+    <SetWidth />
+    <DigitalClock />
+    <Api />
+    <UseContextA />
     <ToDo />
     <UserGreeting isLogged={true} userName="Gozie" />
     <Counter />
